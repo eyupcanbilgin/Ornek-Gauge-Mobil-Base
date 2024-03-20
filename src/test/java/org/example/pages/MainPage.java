@@ -9,7 +9,7 @@ import org.openqa.selenium.support.PageFactory;
 
 public class MainPage {
 
-    // Appium'un @AndroidFindBy annotasyonuyla elementleri bulun
+    // Appium'un @FindBy annotasyonuyla elementleri bulun
     @FindBy(id = "com.amazon.mShop.android.shopping:id/rs_search_src_text")
     private MobileElement searchBox;
 
