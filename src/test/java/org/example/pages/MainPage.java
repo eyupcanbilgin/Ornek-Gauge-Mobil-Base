@@ -4,18 +4,19 @@ import io.appium.java_client.MobileElement;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 import org.example.utils.WebDriverFactory;
+import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class MainPage {
 
     // Appium'un @AndroidFindBy annotasyonuyla elementleri bulun
-    @AndroidFindBy(id = "com.amazon.mShop.android.shopping:id/rs_search_src_text")
+    @FindBy(id = "com.amazon.mShop.android.shopping:id/rs_search_src_text")
     private MobileElement searchBox;
 
-    @AndroidFindBy(id = "com.amazon.mShop.android.shopping:id/rs_search_auto_complete_text")
+    @FindBy(id = "com.amazon.mShop.android.shopping:id/rs_search_auto_complete_text")
     private MobileElement searchAutoComplete;
 
-    @AndroidFindBy(id = "com.amazon.mShop.android.shopping:id/rs_search_src_text")
+    @FindBy(id = "com.amazon.mShop.android.shopping:id/rs_search_src_text")
     private MobileElement searchButton;
 
     // Constructor (Yapıcı method)
